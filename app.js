@@ -20,11 +20,11 @@ function getTip() {
     // getting total amount with tip
     var totalAmount = calculatedTip + amountNumber;
     console.log(totalAmount);
-    // both amounts will be displayed on the screen
-    function fillText() {
+    if (totalAmount > 0) {
         document.getElementById("innerTipAmount").innerHTML = `$${calculatedTip.toString}`
-    };
-    return fillText();
+    }
+    // both amounts will be displayed on the screen
+
 }
 
 
