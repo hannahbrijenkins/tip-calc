@@ -25,6 +25,8 @@ function getTip() {
         var amountCurrency = new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'USD' }).format(totalAmount);
         document.getElementById("totalAmountId").innerHTML = `${amountCurrency}`
     }
-    // both amounts will be displayed on the screen
+}
 
+function reset() {
+    document.getElementById("tipForm");
 }

@@ -14,15 +14,19 @@
   </head>
   <body>
     <div class="formContainer mb-3">
-      <form action="" onsubmit="return false;">
+      <form action="" onsubmit="return false;" id="tipForm">
         <div class="billAmount form-floating">
           <input
             id="billAmountInput"
-            type="Nsumber"
+            type="Number"
             placeholder="Total Bill Amount"
             class="form-control"
+            step=".01"
           />
           <label for="billAmountInput">Total Bill Before Tip</label>
+        </div>
+        <div>
+          <p id="errorMessage"></p>
         </div>
         <div class="tipAmounts">
           <input
@@ -54,7 +58,9 @@
           <button class="btn btn-primary" value="button" onclick="getTip()">
             Submit
           </button>
-          <button class="btn btn-primary">Reset</button>
+          <button class="btn btn-primary" value="button" onclick="reset()">
+            Reset
+          </button>
         </div>
         <div class="output">
           <p>Tip Amount:</p>
