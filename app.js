@@ -11,7 +11,7 @@ function getTip() {
     var tipNumber = parseFloat(tipAmount);
     // console log
     console.log(tipNumber);
-    console.log(amountNumber);
+    console.log(amountBefore);
     // when calculate button is clicked, both variables will pass through an equation and create the variable for tip dollar
     // getting tip amount based on total
     var calculatedTip = amountNumber * tipNumber;
@@ -33,6 +33,3 @@ function getTip() {
     // both amounts will be displayed on the screen
 
 }
-
-
-
